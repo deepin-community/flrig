@@ -1,0 +1,14 @@
+Description: Address FTBFS with GCC-13
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1037661
+Author: tony mancill <tmancill@debian.org>
+
+--- a/src/include/WSclient.h
++++ b/src/include/WSclient.h
+@@ -30,6 +30,7 @@
+ #ifndef WSCLIENT_HP
+ #define WSCLIENT_HP
+ 
++#include <cstdint>
+ #include <string>
+ #include <vector>
+ 
